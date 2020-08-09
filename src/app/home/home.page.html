@@ -1,0 +1,14 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Prueba Sanitas
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content lines="full">
+  <ion-item *ngFor="let item of arraySanitas;">
+    {{item.id}}
+    <ion-img [src]="item.photo"></ion-img> 
+    <ion-label>{{item.text}}</ion-label>
+  </ion-item>
+</ion-content>
